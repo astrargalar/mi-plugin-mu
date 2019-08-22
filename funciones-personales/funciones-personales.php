@@ -89,7 +89,7 @@ function wp_campos_extra($contactmethods)
 }
 add_filter('user_contactmethods', 'wp_campos_extra', 10, 1);
 
-//Soporte de dashicons para poder utilizar los iconos sin estar logeado
+//Soporte de dashicons para poder utilizar los iconos sin estar logeado y así aprovecho los iconos que carga WP por defecto.
 add_action('wp_enqueue_scripts', 'load_dashicons_front_end');
 function load_dashicons_front_end()
 {
